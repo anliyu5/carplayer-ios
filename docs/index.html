@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music for iOS · 1.9.14 下载</title>
+<style>
+  :root{
+    --bg:#0E0F13; --nav:#14161B; --surface:#1F222B; --pill:#22262F; --sheet:#1B1E25;
+    --card:#17191F; --cover:#262A34; --stroke:#2A2E38; --divider:#262933;
+    --accent:#FFB020; --accent-dim:#C98A1E; --text:#F2F4F8; --sub:#9AA0AC; --danger:#E5534B;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       -webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 80px}
+  header{display:flex;align-items:center;gap:18px;padding:22px 0 8px}
+  .icon{width:84px;height:84px;border-radius:19px;background:var(--cover);
+        box-shadow:0 10px 30px rgba(0,0,0,.5);overflow:hidden}
+  .icon img{width:100%;height:100%;display:block}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:.2px}
+  .sub{color:var(--sub);font-size:13px;line-height:1.6}
+  .badge{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);
+         background:rgba(255,176,32,.2);border:1px solid rgba(255,176,32,.4);
+         border-radius:999px;padding:2px 9px;margin-left:8px;vertical-align:2px}
+  h2{font-size:17px;margin:34px 0 12px}
+  .card{background:var(--surface);border-radius:14px;padding:16px 18px;margin-bottom:10px}
+  .card.flat{background:var(--sheet);border:1px solid var(--stroke);border-radius:16px}
+  .row{display:flex;align-items:center;gap:14px}
+  .row .grow{flex:1;min-width:0}
+  .name{font-size:15px;margin-bottom:4px}
+  .meta{font-size:12px;color:var(--sub);line-height:1.55}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;
+       border-radius:999px;font-size:14px;white-space:nowrap;cursor:pointer;border:0;
+       background:rgba(255,176,32,.2);color:var(--accent);border:1px solid rgba(255,176,32,.4)}
+  .btn.plain{background:var(--pill);color:var(--text);border:1px solid transparent}
+  .btn:hover{filter:brightness(1.12)}
+  .btn[aria-disabled="true"]{opacity:.45;cursor:not-allowed;filter:none}
+  pre{background:#0A0B0F;border:1px solid var(--divider);border-radius:12px;padding:14px 16px;
+      overflow:auto;font-size:12.5px;line-height:1.7;color:#D8DEE9}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+  .chip{background:var(--pill);border-radius:999px;padding:7px 14px;font-size:12.5px;color:var(--text)}
+  .warn{border-left:3px solid var(--accent);padding-left:14px;color:var(--sub);font-size:13px;line-height:1.7}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--divider);vertical-align:top}
+  th{color:var(--sub);font-weight:500;font-size:12px}
+  .k{color:var(--accent)}
+  footer{margin-top:44px;color:var(--sub);font-size:12px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="icon"><img src="AppIcon.png" alt="Music"></div>
+    <div>
+      <h1>Music <span class="badge">iOS 1.9.14</span></h1>
+      <div class="sub">
+        由 Android <code>com.carplayer.music</code>（versionCode 27）1:1 适配<br>
+        布局 / 配色 / 图标 / 文案 / 功能全部保留 · SwiftUI · iOS 16+ · 无第三方依赖
+      </div>
+    </div>
+  </header>
+
+  <h2>下载</h2>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">CarPlayer-iOS-1.9.14-src.zip</div>
+        <div class="meta">完整 Xcode 工程（21 个 Swift 文件 + Assets + 工程文件 + 构建脚本 + CI）· 196 KB</div>
+      </div>
+      <a class="btn" href="CarPlayer-iOS-1.9.14-src.zip" download>下载工程</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">CarPlayer-1.9.14-unsigned.ipa</div>
+        <div class="meta">未签名 ipa · GitHub Actions（main / macos-15-intel / Xcode 16.4）编译产物 · 1.01 MB<br>
+          用 Sideloadly / AltStore 以你的 Apple ID 自签后安装</div>
+      </div>
+      <a class="btn" href="CarPlayer-1.9.14-unsigned.ipa" download>下载 ipa</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">iOS适配说明.md</div>
+        <div class="meta">逆向依据（Manifest / ARSC / DEX 解码结果）、逐屏对照、设计令牌表、平台差异清单</div>
+      </div>
+      <a class="btn plain" href="iOS适配说明.md" download>下载说明</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">README.md</div>
+        <div class="meta">工程结构、构建与签名、音源接入方式（LX 脚本 / 青听网关 / 内置接口模板）</div>
+      </div>
+      <a class="btn plain" href="README.md" download>下载 README</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">GitHub 仓库 · CI 记录</div>
+        <div class="meta">anliyu5/carplayer-ios · Actions 已跑通（macos-15-intel + Xcode 16.4）</div>
+      </div>
+      <a class="btn plain" href="https://github.com/anliyu5/carplayer-ios" target="_blank" rel="noreferrer">打开仓库</a>
+    </div>
+  </div>
+
+  <h2>装到 iPhone 桌面</h2>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">① 描述文件 CarPlayer.mobileconfig</div>
+        <div class="meta">装完桌面直接出现 <b>Music</b> 图标（Web Clip），点开进安装页 · 不需要签名 / 开发者账号<br>
+          下载后若没自动进设置：文件 App → 点开 .mobileconfig → 设置 → 安装</div>
+      </div>
+      <a class="btn" href="https://anliyu5.github.io/carplayer-ios/CarPlayer.mobileconfig" download>下载描述文件</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">② AltStore / SideStore 源 → 真 App 图标</div>
+        <div class="meta">免费 Apple ID 即可，手机端自动签名安装，图标可正常启动（7 天自动续签）<br>
+          源地址：<code>https://anliyu5.github.io/carplayer-ios/altstore-source.json</code></div>
+      </div>
+      <a class="btn" href="https://anliyu5.github.io/carplayer-ios/altstore-source.json" target="_blank" rel="noreferrer">打开源</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="grow">
+        <div class="name">③ OTA 安装页（itms-services）</div>
+        <div class="meta">一次点击装到桌面 · 需要<b>已签名</b> ipa（含本机 UDID），未签名包系统会拒绝<br>
+          <code>https://anliyu5.github.io/carplayer-ios/install.html</code></div>
+      </div>
+      <a class="btn plain" href="https://anliyu5.github.io/carplayer-ios/install.html" target="_blank" rel="noreferrer">打开 OTA 页</a>
+    </div>
+  </div>
+
+  <div class="card flat">
+    <div class="warn" style="border-left:0;padding-left:0">
+      iOS 没有「安装配置文件 → 自动装 App」这种能力：配置文件只能加桌面图标（Web Clip）。
+      真·App 上桌面只有三条路 —— OTA（需签名 ipa）、AltStore 自签、MDM 推送。
+      详细对比与命令见 <a href="https://anliyu5.github.io/carplayer-ios/INSTALL.md" style="color:#FFB020">INSTALL.md</a>。
+    </div>
+  </div>
+
+  <h2>出 ipa 的两条路</h2>
+
+  <div class="card flat">
+    <div class="name">① 有 Mac：一条命令</div>
+    <pre><code>cd carplayer-ios
+./scripts/build_ipa.sh                              # 未签名 → dist/*.ipa
+TEAM_ID=你的团队ID ./scripts/build_ipa.sh signed     # 带签名 → 可直接装机/上架</code></pre>
+    <div class="meta" style="margin-top:10px">
+      或直接 <code>open CarPlayer.xcodeproj</code> → 选 Team → <code>⌘R</code> 真机运行 / Product → Archive。
+    </div>
+  </div>
+
+  <div class="card flat">
+    <div class="name">② 没有 Mac：GitHub Actions 自动出包</div>
+    <pre><code>git init &amp;&amp; git add . &amp;&amp; git commit -m "CarPlayer iOS 1.9.14"
+git remote add origin git@github.com:你的账号/carplayer-ios.git
+git push -u origin main
+# Actions → iOS Build (unsigned ipa) → Run workflow → 下载 Artifact</code></pre>
+    <div class="meta" style="margin-top:10px">
+      workflow 已内置在 <code>.github/workflows/ios-build.yml</code>，用 <code>macos-15-intel</code> + Xcode 16.4 免签名编译并打包 Payload → ipa。<br>
+      <code>tools/push_github.py</code> 已把「建库 → 推送 → 触发 → 抓 ipa → 更新本页」全部自动化，单次约 2 分半。
+    </div>
+  </div>
+
+  <h2>已完整复刻的界面</h2>
+  <div class="grid">
+    <div class="chip">主界面 header / mini player / 底部导航</div>
+    <div class="chip">首页：搜索条 + 热歌榜 + 小Q/小云双列</div>
+    <div class="chip">歌单页：播放历史入口 + 我的歌单</div>
+    <div class="chip">搜索页：音源 chips + 历史 + 结果</div>
+    <div class="chip">下载页：音质行 + 列表/空态</div>
+    <div class="chip">播放页：封面 / 歌词 / 渐变进度条 / 控制</div>
+    <div class="chip">歌单详情：播放全部 / 全部下载 / 过滤</div>
+    <div class="chip">播放历史：今天 / 昨天 / 更早 分组</div>
+    <div class="chip">设置：下载管理 / 音源 / 导入歌单 / 诊断</div>
+    <div class="chip">歌曲 ⋮ 菜单 + 加入歌单</div>
+    <div class="chip">LX 自定义音源脚本引擎（JavaScriptCore）</div>
+    <div class="chip">青听网关 · 五平台搜索 · 后台播放 · 锁屏遥控</div>
+  </div>
+
+  <h2>设计令牌（取自 resources.arsc）</h2>
+  <table>
+    <tr><th>令牌</th><th>值</th><th>来源</th></tr>
+    <tr><td>背景 / 导航</td><td class="k">#0E0F13 / #14161B</td><td>color/bg、drawable/bg_nav</td></tr>
+    <tr><td>卡片 / 药丸 / 弹层</td><td class="k">#1F222B(14) / #22262F / #1B1E25(24)</td><td>bg_surface / bg_pill / bg_sheet</td></tr>
+    <tr><td>主色 / 暗</td><td class="k">#FFB020 / #C98A1E</td><td>color/accent、accent_dim</td></tr>
+    <tr><td>主文 / 次文</td><td class="k">#F2F4F8 / #9AA0AC</td><td>color/text、text_sub</td></tr>
+    <tr><td>进度条</td><td class="k">槽 #353947 · 渐变 #FFD25A→#FFB020→#FF9500 · 高 8dp</td><td>drawable/seekbar</td></tr>
+    <tr><td>图标</td><td class="k">Material vector pathData 原样复用</td><td>ic_* 共 25 个</td></tr>
+  </table>
+
+  <h2>需要注意</h2>
+  <div class="warn">
+    ipa 是「编译 + 签名」产物，Windows 上没有 Xcode 就产不出二进制包 —— 这一步只能由 macOS 完成（本机或 GitHub Actions 的 macOS runner）。<br>
+    所以下载页给的是<span style="color:var(--text)">可直接编译的完整工程 + 两条一键出包路径</span>，而不是一个装不上的空壳 ipa。<br><br>
+    另：与 Android 版一致，本版不带内置播放音源。到「设置 → 导入音源」导入 LX 的 <code>.js</code> 脚本，或导入青听的 <code>music.json</code>，之后搜索到的歌即可播放（AES/MD5/Base64/HTTP 桥均已实现，仅 RSA 工具留空实现）。
+  </div>
+
+  <footer>
+    适配自 <code>base.apk</code>（6.64 MB，versionName 1.9.14 / versionCode 27，minSdk 24 / targetSdk 34）。<br>
+    逆向过程仅在本机进行：自写 AXML / ARSC / DEX 解析器，未使用 apktool、jadx 或任何在线服务。
+  </footer>
+</div>
+</body>
+</html>

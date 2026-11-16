@@ -1,0 +1,41 @@
+{
+  "name": "CarPlayer Source",
+  "identifier": "com.carplayer.source",
+  "subtitle": "Music iOS 自签安装源",
+  "description": "Music iOS 1.9.14（Android com.carplayer.music 的 iOS 复刻）",
+  "iconURL": "https://anliyu5.github.io/carplayer-ios/AppIcon.png",
+  "headerURL": "https://anliyu5.github.io/carplayer-ios/AppIcon.png",
+  "website": "https://github.com/anliyu5/carplayer-ios",
+  "tintColor": "#FFB020",
+  "featuredApps": [
+    "com.carplayer.music"
+  ],
+  "apps": [
+    {
+      "name": "Music",
+      "bundleIdentifier": "com.carplayer.music",
+      "developerName": "carplayer",
+      "subtitle": "多音源音乐播放器 · iOS 版",
+      "localizedDescription": "布局、配色、图标、文案与 Android 版 1:1 一致；支持 LX 自定义音源脚本、青听网关、五平台搜索、后台播放与锁屏遥控。",
+      "iconURL": "https://anliyu5.github.io/carplayer-ios/AppIcon.png",
+      "tintColor": "#FFB020",
+      "category": "music",
+      "versions": [
+        {
+          "version": "1.9.14",
+          "buildVersion": "27",
+          "date": "2026-11-16",
+          "downloadURL": "https://anliyu5.github.io/carplayer-ios/CarPlayer-1.9.14-unsigned.ipa",
+          "size": 1057018,
+          "minOSVersion": "16.0",
+          "localizedDescription": "首个 iOS 版本，功能与 Android 1.9.14 对齐。"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": []
+}

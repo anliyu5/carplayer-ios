@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>安装 Music</title>
+<style>
+body{margin:0;background:#0E0F13;color:#F2F4F8;font-family:-apple-system,"PingFang SC",sans-serif;
+display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:18px;padding:24px}
+img{width:96px;height:96px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+h1{font-size:20px;margin:0}
+p{color:#9AA0AC;font-size:13px;line-height:1.7;text-align:center;margin:0}
+a.btn{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 26px;border-radius:999px;
+background:rgba(255,176,32,.2);border:1px solid rgba(255,176,32,.4);color:#FFB020;font-size:15px;text-decoration:none}
+.note{font-size:12px;color:#9AA0AC;max-width:420px;text-align:center;line-height:1.8}
+code{color:#F2F4F8}
+</style></head><body>
+<img src="AppIcon.png" alt="Music">
+<h1>Music 1.9.14</h1>
+<a class="btn" href="itms-services://?action=download-manifest&url=https://anliyu5.github.io/carplayer-ios/manifest.plist">安装到 iPhone</a>
+<p class="note">点击后系统会弹出「安装」确认，装完图标直接出现在桌面。<br>
+该方式要求 ipa 已用开发者证书签名（含本机 UDID），未签名包会提示无法安装。</p>
+<p class="note">不想签名？用描述文件方式：<a href="CarPlayer.mobileconfig" style="color:#FFB020">下载 CarPlayer.mobileconfig</a> →
+设置里安装 → 桌面出现图标。</p>
+</body></html>
